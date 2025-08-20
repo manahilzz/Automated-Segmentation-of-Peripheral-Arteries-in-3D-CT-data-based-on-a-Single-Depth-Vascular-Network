@@ -11,7 +11,6 @@ The pipeline performs:
 - Model evaluation and inference on test CT scans
 
 ## Requirements
-- Python 3.8+
 - PyTorch
 - SimpleITK
 - NumPy, SciPy
