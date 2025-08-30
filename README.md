@@ -1,6 +1,5 @@
 # Automated Segmentation of Peripheral Arteries in 3D CT Data Based on a Single-Depth Vascular Network
 
-## WORK IN PROGRESS
 ## Introduction
 This repository contains source code for the automated segmentation of peripheral arteries from 3D CT scans using a Single-Depth Vascular Network (SDVN). The pipeline allows preprocessing, training, and evaluation of segmentation models for medical imaging research.
 
