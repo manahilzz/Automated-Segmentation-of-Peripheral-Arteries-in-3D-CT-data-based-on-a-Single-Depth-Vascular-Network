@@ -14,10 +14,10 @@ class DoubleConv(nn.Module):
         self.double_conv = nn.Sequential(
             nn.Conv3d(in_channels, out_channels, kernel_size=3, stride=1, padding=1),
             nn.GroupNorm(out_channels, out_channels),
-            nn.ReLU(inplace=True),
+            nn.LeakyReLU(inplace=True),
             nn.Conv3d(out_channels, out_channels, kernel_size=3, stride=1, padding=1),
             nn.GroupNorm(out_channels, out_channels),
-            nn.ReLU(inplace=True)
+            nn.LeakyReLU(inplace=True)
         )
 
     def forward(self, x):
@@ -32,7 +32,7 @@ class DownSample(nn.Module):
         self.down_conv = nn.Sequential(
             nn.Conv3d(in_channels, out_channels, kernel_size=4, stride=2, padding=1),
             nn.GroupNorm(out_channels, out_channels),
-            nn.ReLU(inplace=True)
+            nn.LeakyReLU(inplace=True)
         )
 
     def forward(self, x):
